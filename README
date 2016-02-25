@@ -1,0 +1,15 @@
+An implementation of Conway's Game of Life in JavaScript.
+
+It taught me more about the way that Javascript this works,
+how to break an app into models views and controllers, even
+without using a framework.
+
+I also learned how to accumulate changes then apply them 
+all at once. Changing the status of the cells, while iterating 
+led to a bug where dead cells were made alive and as a result
+during the rest of the iteration influenced the life of other cells.
+
+I also learned how accumulating the updates led to more efficient
+code because instead of erasing the whole canvas, I could send
+a list of cells that needed to be drawn or erased only erase those 
+areas instead of the entire canvas.
